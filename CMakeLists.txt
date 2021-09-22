@@ -60,7 +60,7 @@ if ( BUILD_SSL )
     find_package( openssl REQUIRED )
 endif ( )
 
-include_directories( ${INCLUDE_DIR} SYSTEM ${asio_INCLUDE} ${ssl_INCLUDE} )
+include_directories( ${INCLUDE_DIR} ${asio_INCLUDE} ${ssl_INCLUDE} )
 
 if ( BUILD_IPC )
     add_definitions( "-DBUILD_IPC" )
