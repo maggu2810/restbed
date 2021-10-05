@@ -19,9 +19,9 @@
 //Windows DLL Exports
 #if defined(_WIN32) || defined(__WIN32__) || defined(WIN32) || defined(_WIN64)
 	#ifdef WIN_DLL_EXPORT
-		#define HTTP_EXPORT __declspec(dllexport)
+		#define HTTP_EXPORT [[gnu::dllexport]]
 	#else
-		#define HTTP_EXPORT __declspec(dllimport)
+		#define HTTP_EXPORT [[gnu::dllimport]]
 	#endif
 #else
 	#define HTTP_EXPORT
