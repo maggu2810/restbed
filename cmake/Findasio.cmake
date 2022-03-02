@@ -1,4 +1,4 @@
-find_path( asio_INCLUDE asio.hpp )
+find_path( asio_INCLUDE asio.hpp HINTS "${PROJECT_SOURCE_DIR}/dependency/asio/asio/include" )
 
 if ( asio_INCLUDE )
     set( ASIO_FOUND TRUE )

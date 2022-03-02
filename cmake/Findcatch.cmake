@@ -1,4 +1,4 @@
-find_path( catch_INCLUDE catch2/catch.hpp )
+find_path( catch_INCLUDE catch2/catch.hpp "${PROJECT_SOURCE_DIR}/dependency/catch/single_include" )
 if ( catch_INCLUDE )
     set( catch_INCLUDE ${catch_INCLUDE}/catch2 )
 endif ( )
